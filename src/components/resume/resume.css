@@ -1,0 +1,53 @@
+.resume {
+  width: 8.5in;
+  height: 11in;
+  background: white;
+  margin: 0 auto;
+  padding: .5in;
+}
+.sectionTitle {
+  text-align: center;
+  margin: 12px 0 0 0;
+}
+.name {
+  text-align: center;
+  margin: 0 0 10px 0;
+}
+.contactContainer {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 5px;
+  border-bottom: 2px cornflowerblue solid;
+}
+.contact:not(:first-child):before {
+  content: "\25CF";
+  margin: 0 10px;
+}
+.technicalSection {
+  display: flex;
+  justify-content: space-between;
+}
+.entry {
+  margin: 0 0 12px 0;
+}
+.entry ul {
+  white-space: pre-wrap;
+  margin-right: 30px;
+  line-height: 20px;
+  padding-left: 20px;
+}
+.orgDateContainer {
+  display: flex;
+  justify-content: space-between;
+}
+.role {
+  font-size: 18px;
+  font-weight: 800;
+}
+.dates {
+  font-weight: 500;
+}
+.org {
+  font-weight: 500;
+  margin-bottom: 4px;
+}
