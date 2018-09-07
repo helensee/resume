@@ -1,54 +1,66 @@
 module.exports = {
-  name: 'Yining Chen',
+  name: 'Mike Sayan',
   contact: [
     'New York, NY',
-    '(phone number)',
-    'yining.chen.is@gmail.com'
+    '555-555-5555',
+    'me@gmail.com'
   ],
   technical: {
-    experienced: [
-      'JavaScript',
-      'Node.js',
-      'Git',
-      'HTML (and templating libraries like dust)',
-      'CSS (and CSS preprocessors like stylus)',
-      'Atlassian suite'
+    languages: [
+      'Java', 'Scala', 'Python', 'PostgreSQL'
     ],
-    familiar: [
-      'React, Preact, and Redux',
-      'Python',
-      'Redis',
-      'Akamai',
-      'Scala'
+    frameworks: [
+      'Spark', 'Hadoop', 'Spring MVC & Boot', 'AspectJ', 'Jackson', 'Hibernate', 'QueryDSL', 'Hystrix', 'gRPC'
+    ],
+    tools: [
+      'Docker', 'Redis', 'Consul', 'Jetty', 'Nginx', 'Git', 'Akamai', 'Jenkins', 'Maven', 'Sbt'
+    ],
+    aws: [
+      'CloudFormation', 'EC2', 'ECS', 'EMR', 'Lambda', 'S3', 'RDS'
     ]
   },
   experience: [
     {
-      org: 'Viacom Nickelodeon Web Team',
-      dates: 'Sep 2015 – Feb 2018',
+      org: 'Viacom Personalization',
+      dates: 'Jan 2017 – Current',
       role: 'Software Engineer',
       accomplishments: [
-        'Launched nick.com and nickjr.com on a shared codebase',
-        'Developed and maintained client-side and server-side (Node.js) JavaScript features',
-        'Improved performance of internal reporting library and made it simpler for developers to use',
-        'Contributed to a POC version of nickjr.com using React and Redux',
-        'Added tooling to a chatbot to clear Redis & Akamai cache',
-        'Implemented various client-side A/B test experiences',
-        'Wrote Scala scripts via Databricks Apache Spark on user game data to identify rating system for popularity algorithm',
-        'Mentored interns and guided their contributions to our web applications'
+        'Building a scalable automated data pipeline, with monitoring tools, to batch process user data',
+        'Utilizing machine learning algorithms such as ALS for collaborative filtering using Apache Spark',
+        'Researching and designing an algorithm to rank content by popularity with time decay',
+        'Designing databases to query recommendations with region and brand granularity for global apps',
+        'Developing containerized microservices for serving results using Spring Boot, Consul, & gRPC',
+        'Creating code deployment pipelines for applications which are run in EMR, ECS, or Lambda',
+        'Templating AWS infrastructure using CloudFormation to deploy in mutliple accounts',
+        'Contribute in prioritizing, scheduling, and constructing solutions to feature requests'
       ]
     }, {
-      org: 'Viacom Central Product Engagement',
-      dates: 'June 2015 – Aug 2015',
-      role: 'Summer Associate',
+      org: 'Nick Services',
+      dates: 'Jan 2016 – Dec 2016',
+      role: 'Software Engineer',
       accomplishments: [
-        'Made dashboard site with automatic data visualizations and reports from calls to Adobe’s API\n(PHP, JavaScript, HTML, CSS)',
-        'Created demo site of internal API using mustache.js'
+        'Worked on Nick API which is used globally by Web, Native Mobile, & OTT apps',
+        'Added content management DTOs to API feeds',
+        'Implemented timezone support to TV schedule for global sites',
+        'Communicated with Noggin teams to rollout new features by utilizing API versioning',
+        'Decreased application start-up time 20% by externalizing dependencies',
+        'Supported operations team in tracking various bugs and organizing launches of new apps'
       ]
     }
   ],
-  volunteering: [
+  education: [
     {
+      role: 'Stony Brook University',
+      dates: 'Dec 2016',
+      accomplishments: [
+        'B.S. Computer Science',
+        'Dean\'s List (Summer 2014 through Fall 2016)',
+        "Major GPA: 3.6"
+      ]
+    }
+  ],
+  projects: [
+   {
       org: 'ScriptEd',
       dates: 'Sep 2016 – Current',
       role: 'Volunteer Teacher',
@@ -57,14 +69,5 @@ module.exports = {
       ]
     }
   ],
-  education: [
-    {
-      role: 'New York University',
-      dates: 'May 2015',
-      accomplishments: [
-        'Double Major in Computer Science and Applied Psychology'
-      ]
-    }
-  ],
-  sectionOrder: ['experience', 'volunteering', 'education']
+  sectionOrder: ['experience', 'projects', 'education']
 }

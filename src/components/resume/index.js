@@ -45,11 +45,12 @@ export default class Resume extends Component {
         <section>
           <h2 class={style.sectionTitle}>Technical Skills</h2>
           <div class={style.technicalSection}>
-            <Entry role='Experienced' accomplishments={data.technical.experienced} />
-            <Entry role='Familiar' accomplishments={data.technical.familiar} />
+            <Entry role='Languages' accomplishments={data.technical.languages} />
+            <Entry role='Frameworks' accomplishments={data.technical.frameworks} />
+            <Entry role='Tools' accomplishments={data.technical.tools} />
+            <Entry role='AWS' accomplishments={data.technical.aws} />
           </div>
         </section>
-        <Section data={data.volunteering} sectionName='Volunteering' />
         <Section data={data.education} sectionName='Education' />
       </div>
     )
